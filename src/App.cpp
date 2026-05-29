@@ -3,7 +3,9 @@
 #include <SFML/System/Clock.hpp>
 #include <SFML/Window/Event.hpp>
 #include <SFML/Window/VideoMode.hpp>
+#include <iostream>
 #include <optional>
+#include <print>
 
 App::App() :
 		m_window(sf::VideoMode({ m_win_width, m_win_height }), "Tower Defence Game")
@@ -32,6 +34,8 @@ void App::run()
 void App::shutdown()
 {
 	m_window.close();
+	std::print("------Press Any Key to Exit------\n");
+	std::cin.get(); // I wanted to use std::print
 }
 
 void App::handle_events()

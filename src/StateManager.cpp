@@ -2,12 +2,10 @@
 #include "PlayState.h"
 #include "State.h"
 #include <SFML/Window/Event.hpp>
-#include <iostream>
 #include <memory>
 
 void StateManager::push_state(StateType type)
 {
-	std::cout << "push back state \n";
 	m_pending.push_back(PendingChange{ .change = Change::Push, .state = type });
 
 }
