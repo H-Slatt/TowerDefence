@@ -1,0 +1,13 @@
+BasedOnStyle: LLVM
+BreakBeforeBraces: Allman
+UseTab: Always
+TabWidth: 2
+IndentWidth: 2
+ColumnLimit: 80
+ContinuationIndentWidth: 2
+BinPackParameters: false
+AllowShortFunctionsOnASingleLine: None
+BreakConstructorInitializers: AfterColon
+PackConstructorInitializers: Never
+Cpp11BracedListStyle: false
+SpaceBeforeCpp11BracedList: false
